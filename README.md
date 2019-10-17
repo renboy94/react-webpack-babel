@@ -136,7 +136,7 @@ ReactDom.render(<App />, document.getElementById("app"));
 </html>
 ```
 
-8. Open src/components/App.js
+8. Open src/components/App.js and paste the following code:
 
 ```
 import React from "react";
@@ -150,4 +150,43 @@ const App = () => {
 };
 
 export default App;
+```
+
+9. In package.json, add run and build scripts:
+
+```
+# run and build scripts
+"scripts": {
+  "start": "webpack-dev-server --mode development --open --hot",
+  "build": "webpack --mode production"
+}
+
+# Final package.json should look this this
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
 ```
