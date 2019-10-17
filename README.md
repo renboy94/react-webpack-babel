@@ -9,13 +9,13 @@ npm install
 
 ## Summary of how to setup React from scratch
 
-1. Create an empty folder
+### 1. Create an empty folder
 
 ```
 mkdir my-react-project
 ```
 
-2. Install dependencies
+### 2. Install dependencies
 
 ```
 # Initialize package.json
@@ -60,7 +60,7 @@ gin
 }
 ```
 
-3. Create a webpack.config.js in the root folder:
+### 3. Create a webpack.config.js in the root folder:
 
 ```
 const path = require("path");
@@ -91,7 +91,7 @@ module.exports = {
 };
 ```
 
-4. Create a .babelrc in the root folder:
+### 4. Create a .babelrc in the root folder:
 
 ```
 {
@@ -99,7 +99,7 @@ module.exports = {
 }
 ```
 
-5. Create the following folders and files:
+### 5. Create the following folders and files:
 
 ```
 - src(root folder)
@@ -109,7 +109,7 @@ module.exports = {
     - index.js
 ```
 
-6. Open src/index.js and paste the following code:
+### 6. Open src/index.js and paste the following code:
 
 ```
 import React from "react";
@@ -119,7 +119,7 @@ import App from "./components/App";
 ReactDom.render(<App />, document.getElementById("app"));
 ```
 
-7. Open src/index.html and paste the following code:
+### 7. Open src/index.html and paste the following code:
 
 ```
 <!DOCTYPE html>
@@ -136,7 +136,7 @@ ReactDom.render(<App />, document.getElementById("app"));
 </html>
 ```
 
-8. Open src/components/App.js and paste the following code:
+### 8. Open src/components/App.js and paste the following code:
 
 ```
 import React from "react";
@@ -152,7 +152,7 @@ const App = () => {
 export default App;
 ```
 
-9. In package.json, add run and build scripts:
+### 9. In package.json, add run and build scripts:
 
 ```
 # run and build scripts
