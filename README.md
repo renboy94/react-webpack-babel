@@ -90,3 +90,64 @@ module.exports = {
   ]
 };
 ```
+
+4. Create a .babelrc in the root folder:
+
+```
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+```
+
+5. Create the following folders and files:
+
+```
+- src(root folder)
+    - components
+        - App.js
+    - index.html
+    - index.js
+```
+
+6. Open src/index.js and paste the following code:
+
+```
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./components/App";
+
+ReactDom.render(<App />, document.getElementById("app"));
+```
+
+7. Open src/index.html and paste the following code:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My React App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+```
+
+8. Open src/components/App.js
+
+```
+import React from "react";
+
+const App = () => {
+  return (
+    <div>
+      <h1>My React App!</h1>
+    </div>
+  );
+};
+
+export default App;
+```
